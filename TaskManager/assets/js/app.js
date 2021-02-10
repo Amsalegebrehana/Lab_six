@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // createindex: 1) field name 2) keypath 3) options
     objectStore.createIndex("taskname", "taskname", { unique: false });
 
-    console.log("Database ready and fields created!");
+    console.log("Database created!");
   };
 
   form.addEventListener("submit", addNewTask);
@@ -167,7 +167,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // clear the table.
     tasks.clear();
     displayTaskList();
-    console.log("Tasks Cleared !!!");
+    console.log("Empty tasks");
   }
 });
 
