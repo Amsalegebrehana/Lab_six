@@ -217,7 +217,7 @@ filter.addEventListener("keyup", filterTasks);
 
 function sorting(e) {
   let sortedTask;
-  if (e.target.innerText.toString().toLowerCase() === "newer first") {
+  if (e.target.innerText.toString().toLowerCase() === "Acending") {
     sortedTask = tasks.sort(function (task1, task2) {
       return task2.date.getTime() - task1.date.getTime();
     });
